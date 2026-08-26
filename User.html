@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Detail</title>
+  <link rel="stylesheet" href="user-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+  <div class="profile-card">
+    <!-- Header Banner -->
+    <div class="cover-photo">
+      <div class="avatar-wrapper">
+        <img src="https://img.icons8.com/?size=100&id=23264&format=png" alt="User Profile" class="avatar">
+      </div>
+    </div>
+
+    <!-- User Basic Info & Actions -->
+    <div class="profile-header">
+      <div class="user-titles">
+        <h2>Phat Renn</h2>
+        <p class="role">Frontend Developer</p>
+        <span class="status-badge">Active</span>
+      </div>
+      <div class="action-buttons">
+        <button class="btn btn-primary">Edit Profile</button>
+        <button class="btn btn-outline">Message</button>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Profile Detail Grid -->
+    <div class="details-grid">
+      <!-- Personal Info -->
+      <div class="info-section">
+        <h3>ព័ត៌មានផ្ទាល់ខ្លួន</h3>
+        <div class="info-row">
+          <span class="label">ឈ្មោះពេញ:</span>
+          <span class="value">Phat Renn</span>
+        </div>
+        <div class="info-row">
+          <span class="label">អ៊ីមែល:</span>
+          <span class="value">renn.dev@example.com</span>
+        </div>
+        <div class="info-row">
+          <span class="label">លេខទូរស័ព្ទ:</span>
+          <span class="value">+855 12 345 678</span>
+        </div>
+        <div class="info-row">
+          <span class="label">អាសយដ្ឋាន:</span>
+          <span class="value">រាជធានីភ្នំពេញ, កម្ពុជា</span>
+        </div>
+      </div>
+
+      <!-- Account Info -->
+      <div class="info-section">
+        <h3>ព័ត៌មានគណនី</h3>
+        <div class="info-row">
+          <span class="label">Role / តួនាទី:</span>
+          <span class="value">Developer</span>
+        </div>
+        <div class="info-row">
+          <span class="label">ថ្ងៃបង្កើត:</span>
+          <span class="value">15 មករា 2026</span>
+        </div>
+        <div class="info-row">
+          <span class="label">ចូលប្រព័ន្ធចុងក្រោយ:</span>
+          <span class="value">10 នាទីមុន</span>
+        </div>
+        <div class="info-row">
+          <span class="label">ជំនាញ:</span>
+          <span class="value">HTML, CSS, JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="about-section">
+      <h3>អំពីខ្ញុំ (About Me)</h3>
+      <p>
+        ខ្ញុំជា Frontend Developer ដែលចូលចិត្តបង្កើត User Interface ស្អាតៗ និងមានភាពងាយស្រួលក្នុងការប្រើប្រាស់ (Responsive Web Design)។
+      </p>
+    </div>
+  </div>
+
 </body>
 </html>

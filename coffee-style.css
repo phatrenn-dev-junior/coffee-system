@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    color: #28a745;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .coffee-detail-card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .coffee-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .coffee-info {
+    flex: 1;
+  }
+  
+  .coffee-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-buy, .btn-cart {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-buy {
+    background-color: #28a745;
+    color: #white;
+  }
+  
+  .btn-cart {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Responsive សម្រាប់ mobile */
+  @media (max-width: 600px) {
+    .coffee-detail-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

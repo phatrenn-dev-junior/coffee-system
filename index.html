@@ -1,388 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link href="https://jsdelivr.net" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee IT | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="home-page">
+  <header class="home-header">
+    <a class="home-logo" href="index.html" aria-label="Coffee IT home">
+      <img src="./image/introduction-cafe-removebg-preview.png" alt="">
+      <span>Coffee IT</span>
+    </a>
 
-<body>
-    <nav class="navbars-home">
-        <div class="logo">
-            <img src="#" alt="">
-            <p>Coffee IT</p>
-        </div>
-
-        <!-- <ul class="lists">
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Shop</a></li>
-            <li class="item"><a href="#">Categories</a></li>
-
-        </ul> -->
-        <div class="wrap-item-nav">
-
-      
-
-       <a href="./User.html">
-        <div class="user-profile">
-            <img class="width-icons-home" src="https://img.icons8.com/?size=100&id=npKPWVoztiss&format=png&color=000000" alt="User profile">
-        </div>
-       </a>
-        <div class="nafication">
-            <img class="width-icons-home" src="https://img.icons8.com/?size=100&id=43973&format=png&color=000000" alt="">
-        </div>
-        <div class="shopping-card">
-            <img class="width-icons-home" src="https://img.icons8.com/?size=100&id=44050&format=png&color=000000" alt="">
-        </div>
-    </div>
-
+    <nav class="home-actions" aria-label="Account actions">
+      <a class="icon-control" href="./User.html" aria-label="View user profile">
+        <img src="https://img.icons8.com/?size=100&id=npKPWVoztiss&format=png&color=000000" alt="">
+      </a>
+      <button class="icon-control" type="button" aria-label="View notifications">
+        <img src="https://img.icons8.com/?size=100&id=43973&format=png&color=000000" alt="">
+      </button>
+      <button class="icon-control" type="button" aria-label="View shopping cart">
+        <img src="https://img.icons8.com/?size=100&id=44050&format=png&color=000000" alt="">
+      </button>
     </nav>
-    <section class="section-home">
-        <h1>Hey, <span class="ren">Ren</span></h1> <br>
-        <p>What would you like today?</p>
-        <div class="search">
-            <input type="search" name="" id="" placeholder="search here...">
-            <img src="https://img.icons8.com/?size=100&id=ISS3mb9Dz4do&format=png&color=000000" alt="">
-        </div>
+  </header>
 
-        <!-- slider section -->
-        <div class="slider">
-        
+  <main class="home-content">
+    <section class="home-intro" aria-labelledby="welcome-heading">
+      <h1 id="welcome-heading">Hey, <span>Ren</span></h1>
+      <p>What would you like today?</p>
 
-            <div class="w3-content w3-section" style="max-width:500px ;height: 200px;">
-                <img class="mySlides" src="./image/p-1.jpg" style="width:100%;height: 200px;">
-                <img class="mySlides" src="./image/p-2.jpg" style="width:100%; height: 200px;">
-                <img class="mySlides" src="./image/p-3.jpg" style="width:100%; height: 200px;">
-            </div>
-        </div>
-        <div class="popular-categories">
-            <div class="warp-category">
+      <form class="home-search" role="search">
+        <label class="visually-hidden" for="menu-search">Search the menu</label>
+        <input id="menu-search" name="query" type="search" placeholder="Search the menu">
+        <button type="submit" aria-label="Submit menu search">
+          <img src="https://img.icons8.com/?size=100&id=ISS3mb9Dz4do&format=png&color=000000" alt="">
+        </button>
+      </form>
 
-                <h2>Popular Categories</h2>
-                <button>See all</button>
-            </div>
-
-            <div class="categories">
-
-                <!-- category have four -->
-                <a href="coffee.html" class="category-link">
-                    <div class="category">
-                      <img src="./image/item-cafe.png" alt="Coffee">
-                      <p>Coffee</p>
-                    </div>
-                  </a>
-                <div class="category">
-                    <img src="./image/item-tea.png" alt="">
-                    <p>Tea</p>
-                </div>
-                <div class="category">
-                    <img src="./image/item-scones.png" alt="">
-                    <p>Scones</p>
-                </div>
-                <div class="category">
-                    <img src="./image/drink.png" alt="">
-                    <p>Coca</p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- section Delicoius -->
-         <div class="section-delicoius">
-            <h2>Delicoius <span>Breakfast</span></h2>
-
-            <p>Our best serving of breakfast and dolicoius pastries</p>
-
-            <div class="btns-delicoius">
-                <button>All</button>
-                <div class="height-line"></div>
-                <button>Eggs</button>
-                <button>Bacon</button>
-                <button>Light</button>
-                <button>Medium</button>
-        
-            </div>
-            
-            <div class="slider-delicoius-breakfast">
-
-                <div class="wrap-card-dilicoius">
-            
-                      <div class="w3-content w3-display-container" style="height: 400px;">
-                      
-                      <div class="w3-display-container mySlides">
-                        <div class="card-dilicoius">
-                            <img src="./image/bf.jpg" alt="">
-                                <div class="icon-hart">
-                                    <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                                </div>
-                            <p>Lorem, ipsum.</p>
-                            <span>$40.00</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
-    
-                            <div class="btns-card-delicoius">
-                                <button>Medium</button>
-                                <button>4.4</button>
-                                <button>On Special</button>
-                            </div>
-                            <div class="add-card">
-                                <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                            </div>
-                        </div>
-                      </div>
-                      
-                      <div class="w3-display-container mySlides">
-                        <div class="card-dilicoius">
-                            <img src="./image/bf-2.jpg" alt="">
-                                <div class="icon-hart">
-                                    <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                                </div>
-                            <p>Lorem, ipsum.</p>
-                            <span>$40.00</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
-    
-                            <div class="btns-card-delicoius">
-                                <button>Medium</button>
-                                <button>4.4</button>
-                                <button>On Special</button>
-                            </div>
-                            <div class="add-card">
-                                <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                            </div>
-                        </div>
-                      </div>
-                      
-                      <div class="w3-display-container mySlides">
-                        <div class="card-dilicoius">
-                            <img src="./image/bf.jpg" alt="">
-                                <div class="icon-hart">
-                                    <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                                </div>
-                            <p>Lorem, ipsum.</p>
-                            <span>$40.00</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
-    
-                            <div class="btns-card-delicoius">
-                                <button>Medium</button>
-                                <button>4.4</button>
-                                <button>On Special</button>
-                            </div>
-                            <div class="add-card">
-                                <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                            </div>
-                        </div>
-                      </div>
-                      
-                      <div class="w3-display-container mySlides">
-                        <div class="card-dilicoius">
-                            <img src="./image/bf.jpg" alt="">
-                                <div class="icon-hart">
-                                    <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                                </div>
-                            <p>Lorem, ipsum.</p>
-                            <span>$40.00</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
-    
-                            <div class="btns-card-delicoius">
-                                <button>Medium</button>
-                                <button>4.4</button>
-                                <button>On Special</button>
-                            </div>
-                            <div class="add-card">
-                                <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                            </div>
-                        </div>
-                      </div>
-                      
-                     
-                      
-                      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-                      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-                      
-                      </div>
-                    <!-- <div class="card-dilicoius">
-                        <img src="./image/bf.jpg" alt="">
-                            <div class="icon-hart">
-                                <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                            </div>
-                        <p>Lorem, ipsum.</p>
-                        <span>$40.00</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
-
-                        <div class="btns-card-delicoius">
-                            <button>Medium</button>
-                            <button>4.4</button>
-                            <button>On Special</button>
-                        </div>
-                        <div class="add-card">
-                            <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                        </div>
-                    </div> -->
-
-                </div>
-
-            </div>
-
-
-
-
-         </div>
-        <!-- section Delicoius -->
-
-        <!-- section Our Beverages -->
-
-        <div class="section-beverages">
-            <h2>Our<span>Beverages</span></h2>
-
-            <p>All your favorite beverages in one place</p>
-
-            <div class="btns-delicoius">
-                <button>All</button>
-                <div class="height-line"></div>
-                <button>Eggs</button>
-                <button>Bacon</button>
-                <button>Light</button>
-                <button>Medium</button>
-        
-            </div>
-
-            <div class="card-beverages-container">
-                <div class="card-dilicoius w-100">
-                    <img src="./image/bf.jpg" alt="">
-                        <div class="icon-hart">
-                            <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                        </div>
-                    <p>Lorem, ipsum.</p>
-                    <span>$40.00</span>
-                    
-
-                    <div class="btns-card-delicoius">
-                        <button>Medium</button>
-                        <button>4.4</button>
-                        <button>On Special</button>
-                    </div>
-                    <div class="add-card">
-                        <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                    </div>
-                </div> <div class="card-dilicoius w-100">
-                    <img src="./image/bf.jpg" alt="">
-                        <div class="icon-hart">
-                            <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                        </div>
-
-                    <span>$40.00</span>
-                    <p>Lorem ipsum dolor</p>
-
-                    <div class="btns-card-delicoius">
-                        <button>Medium</button>
-                        <button>4.4</button>
-                        <button>On Special</button>
-                    </div>
-                    <div class="add-card">
-                        <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- section Our Beverages -->
-         <!-- Section Great Combination -->
-
-         <div class="section-combiation">
-            <div class="header-combination warp-category">
-                <h2>Great Combination</h2>
-                <button>See All</button>
-
-            </div>
-            <p style="margin-top:3px ;">Try out these simple but perfect combination</p>
-
-            <div class="combination-container">
-                        <div class="card-dilicoius">
-                        <img src="./image/bf.jpg" alt="">
-                            <div class="icon-hart">
-                                <img src="https://img.icons8.com/?size=100&id=44018&format=png&color=000000" alt="">
-                            </div>
-                        <p>Lorem, ipsum.</p>
-                        <span>$40.00</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci.</p>
-
-                        <div class="btns-card-delicoius">
-                            <button>Medium</button>
-                            <button>4.4</button>
-                            <button>On Special</button>
-                        </div>
-                        <div class="add-card">
-                            <img src="https://img.icons8.com/?size=100&id=nUbUJ2mLVook&format=png&color=000000" alt="">
-                        </div>
-                    </div>
-
-            </div>
-         </div>
-         <!-- Section Great Combination -->
-
-        
-
-
-
-
-
-
-
- 
-
-
-
-        <!-- js for slider -->
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 3000); // Change image every 2 seconds
-            }
-        </script>
-        <!-- js for slider -->
-
-        <!-- js for section delicoius -->
-         <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-        <!-- js for section delicoius -->
-
+      <div class="hero-carousel" aria-label="Featured coffee promotions">
+        <img class="hero-slide" src="./image/p-1.jpg" alt="Freshly brewed coffee promotion">
+        <img class="hero-slide" src="./image/p-2.jpg" alt="Coffee and pastry featured offer">
+        <img class="hero-slide" src="./image/p-3.jpg" alt="Specialty coffee selection">
+      </div>
     </section>
 
-     <!-- 2. Bootstrap Bundle JS (includes Popper) -->
-  <script src="https://jsdelivr.net"></script>
+    <section class="product-section categories-section" aria-labelledby="categories-heading">
+      <div class="section-heading">
+        <h2 id="categories-heading">Popular Categories</h2>
+        <a class="text-action" href="#categories">See all</a>
+      </div>
+      <div class="category-grid" id="categories">
+        <a class="category-card" href="coffee.html">
+          <img src="./image/item-cafe.png" alt="">
+          <span>Coffee</span>
+        </a>
+        <a class="category-card" href="#tea">
+          <img src="./image/item-tea.png" alt="">
+          <span>Tea</span>
+        </a>
+        <a class="category-card" href="#scones">
+          <img src="./image/item-scones.png" alt="">
+          <span>Scones</span>
+        </a>
+        <a class="category-card" href="#cold-drinks">
+          <img src="./image/drink.png" alt="">
+          <span>Cold drinks</span>
+        </a>
+      </div>
+    </section>
 
+    <section class="product-section breakfast-section" aria-labelledby="breakfast-heading">
+      <h2 id="breakfast-heading">Delicious <span>Breakfast</span></h2>
+      <p>Our best breakfast dishes and freshly baked pastries.</p>
+      <div class="filter-list" aria-label="Breakfast filters">
+        <button type="button" aria-pressed="true">All</button>
+        <button type="button" aria-pressed="false">Eggs</button>
+        <button type="button" aria-pressed="false">Bacon</button>
+        <button type="button" aria-pressed="false">Light</button>
+        <button type="button" aria-pressed="false">Medium</button>
+      </div>
+
+      <div class="breakfast-carousel">
+        <article class="product-card breakfast-slide">
+          <div class="product-image-wrap">
+            <img src="./image/bf.jpg" alt="Avocado toast topped with poached eggs">
+            <button class="favorite-button" type="button" aria-label="Add avocado egg toast to favorites">♡</button>
+          </div>
+          <div class="product-card-content">
+            <h3>Avocado Egg Toast</h3>
+            <data class="product-price" value="8.50">$8.50</data>
+            <p>Crisp sourdough, avocado, poached eggs, and fresh herbs.</p>
+            <div class="product-meta"><span>Medium</span><span aria-label="Rated 4.8 out of 5">★ 4.8</span><span>Popular</span></div>
+            <button class="add-to-cart" type="button" aria-label="Add avocado egg toast to cart">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card breakfast-slide">
+          <div class="product-image-wrap">
+            <img src="./image/bf-2.jpg" alt="Pancakes with berries and maple syrup">
+            <button class="favorite-button" type="button" aria-label="Add berry pancakes to favorites">♡</button>
+          </div>
+          <div class="product-card-content">
+            <h3>Berry Pancakes</h3>
+            <data class="product-price" value="7.75">$7.75</data>
+            <p>Fluffy pancakes served with berries and maple syrup.</p>
+            <div class="product-meta"><span>Sweet</span><span aria-label="Rated 4.7 out of 5">★ 4.7</span><span>New</span></div>
+            <button class="add-to-cart" type="button" aria-label="Add berry pancakes to cart">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="product-card breakfast-slide">
+          <div class="product-image-wrap">
+            <img src="./image/bf-3.jpg" alt="Croissant breakfast sandwich with egg and cheese">
+            <button class="favorite-button" type="button" aria-label="Add croissant breakfast sandwich to favorites">♡</button>
+          </div>
+          <div class="product-card-content">
+            <h3>Croissant Breakfast Sandwich</h3>
+            <data class="product-price" value="9.00">$9.00</data>
+            <p>Buttery croissant filled with egg, cheese, and salad greens.</p>
+            <div class="product-meta"><span>Hearty</span><span aria-label="Rated 4.6 out of 5">★ 4.6</span><span>Chef's pick</span></div>
+            <button class="add-to-cart" type="button" aria-label="Add croissant breakfast sandwich to cart">Add to cart</button>
+          </div>
+        </article>
+
+        <button class="carousel-control previous" type="button" aria-label="Show previous breakfast" data-carousel-direction="-1">&#10094;</button>
+        <button class="carousel-control next" type="button" aria-label="Show next breakfast" data-carousel-direction="1">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="product-section beverages-section" aria-labelledby="beverages-heading">
+      <h2 id="beverages-heading">Our <span>Beverages</span></h2>
+      <p>All your favorite beverages in one place.</p>
+      <div class="product-grid">
+        <article class="product-card compact-card" id="tea">
+          <div class="product-image-wrap">
+            <img src="./image/p-1.jpg" alt="Iced caramel latte in a tall glass">
+            <button class="favorite-button" type="button" aria-label="Add iced caramel latte to favorites">♡</button>
+          </div>
+          <div class="product-card-content">
+            <h3>Iced Caramel Latte</h3>
+            <data class="product-price" value="5.50">$5.50</data>
+            <div class="product-meta"><span>Cold</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span></div>
+            <button class="add-to-cart" type="button" aria-label="Add iced caramel latte to cart">Add to cart</button>
+          </div>
+        </article>
+        <article class="product-card compact-card" id="cold-drinks">
+          <div class="product-image-wrap">
+            <img src="./image/p-2.jpg" alt="Hot matcha latte with foam art">
+            <button class="favorite-button" type="button" aria-label="Add matcha latte to favorites">♡</button>
+          </div>
+          <div class="product-card-content">
+            <h3>Matcha Latte</h3>
+            <data class="product-price" value="5.25">$5.25</data>
+            <div class="product-meta"><span>Hot</span><span aria-label="Rated 4.7 out of 5">★ 4.7</span></div>
+            <button class="add-to-cart" type="button" aria-label="Add matcha latte to cart">Add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-section combination-section" aria-labelledby="combination-heading">
+      <div class="section-heading">
+        <h2 id="combination-heading">Great Combinations</h2>
+        <a class="text-action" href="#scones">See all</a>
+      </div>
+      <p class="combination-description">Try these simple but perfect pairings.</p>
+      <article class="product-card combination-card" id="scones">
+        <div class="product-image-wrap">
+          <img src="./image/bf-1.jpg" alt="Cappuccino paired with a fresh butter croissant">
+          <button class="favorite-button" type="button" aria-label="Add cappuccino and croissant combo to favorites">♡</button>
+        </div>
+        <div class="product-card-content">
+          <h3>Cappuccino &amp; Croissant</h3>
+          <data class="product-price" value="10.50">$10.50</data>
+          <p>A classic cappuccino paired with a warm butter croissant.</p>
+          <div class="product-meta"><span>Classic</span><span aria-label="Rated 4.9 out of 5">★ 4.9</span><span>Save 10%</span></div>
+          <button class="add-to-cart" type="button" aria-label="Add cappuccino and croissant combo to cart">Add to cart</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroCarousel = document.querySelector('.hero-carousel');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let heroIndex = 0;
+    let heroTimer;
+
+    function showHeroSlide(index) {
+      heroSlides.forEach((slide, position) => {
+        slide.hidden = position !== index;
+      });
+    }
+
+    function startHeroCarousel() {
+      clearInterval(heroTimer);
+      if (reduceMotion.matches || heroSlides.length < 2) return;
+      heroTimer = setInterval(() => {
+        heroIndex = (heroIndex + 1) % heroSlides.length;
+        showHeroSlide(heroIndex);
+      }, 3000);
+    }
+
+    showHeroSlide(heroIndex);
+    startHeroCarousel();
+    heroCarousel.addEventListener('mouseenter', () => clearInterval(heroTimer));
+    heroCarousel.addEventListener('mouseleave', startHeroCarousel);
+    heroCarousel.addEventListener('focusin', () => clearInterval(heroTimer));
+    heroCarousel.addEventListener('focusout', startHeroCarousel);
+    reduceMotion.addEventListener('change', startHeroCarousel);
+
+    const breakfastSlides = document.querySelectorAll('.breakfast-slide');
+    const breakfastControls = document.querySelectorAll('[data-carousel-direction]');
+    let breakfastIndex = 0;
+
+    function showBreakfastSlide(index) {
+      breakfastSlides.forEach((slide, position) => {
+        slide.hidden = position !== index;
+      });
+    }
+
+    breakfastControls.forEach((control) => {
+      control.addEventListener('click', () => {
+        const direction = Number(control.dataset.carouselDirection);
+        breakfastIndex = (breakfastIndex + direction + breakfastSlides.length) % breakfastSlides.length;
+        showBreakfastSlide(breakfastIndex);
+      });
+    });
+
+    showBreakfastSlide(breakfastIndex);
+  </script>
 </body>
-
 </html>

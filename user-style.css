@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kantumruy Pro', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f4f6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Profile Card Container */
+  .profile-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+  }
+  
+  /* Cover & Avatar */
+  .cover-photo {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    height: 140px;
+    position: relative;
+  }
+  
+  .avatar-wrapper {
+    position: absolute;
+    bottom: -40px;
+    left: 32px;
+  }
+  
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    object-fit: cover;
+  }
+  
+  /* Header & Buttons */
+  .profile-header {
+    padding: 50px 32px 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .user-titles h2 {
+    font-size: 22px;
+    color: #1f2937;
+  }
+  
+  .user-titles .role {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 2px;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 2px 10px;
+    background-color: #d1fae5;
+    color: #065f46;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+  
+  .btn-outline:hover {
+    background-color: #f9fafb;
+  }
+  
+  .divider {
+    border: 0;
+    height: 1px;
+    background: #f3f4f6;
+    margin: 0 32px;
+  }
+  
+  /* Content Grid */
+  .details-grid {
+    padding: 24px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .info-section h3, .about-section h3 {
+    font-size: 16px;
+    color: #111827;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f9fafb;
+    font-size: 14px;
+  }
+  
+  .info-row .label {
+    color: #6b7280;
+  }
+  
+  .info-row .value {
+    color: #1f2937;
+    font-weight: 500;
+  }
+  
+  .about-section {
+    padding: 0 32px 32px 32px;
+  }
+  
+  .about-section p {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Support for Mobile */
+  @media (max-width: 640px) {
+    .details-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
